@@ -5,7 +5,6 @@
 void theCallBack()
 {
     printf("Ring signal - Inside Callback \n");
-    //return 1;
 }
 
 

@@ -1,4 +1,3 @@
-//#include "myApp.h"
 #include "myApp_generated.h"
 #include <stdbool.h>
 #include <stdio.h>
@@ -12,15 +11,13 @@
 #include <glib.h>
 #include <glib/gprintf.h>
 
-//typedef gint gboolean;
-
 GError *error = NULL;
 GDBusConnection *connection;
 
 MyExampleComAppTrainningAlarmClock *proxy;
 unsigned alarm_status = 0;    //0 - unset; 1-set
 
-void setTime(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation, int hour, int min)
+void set_time(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation, int hour, int min)
 {
     char *return_msg = (char *) malloc(100);
     if ((hour >= 0) && (hour < 24))
@@ -43,7 +40,7 @@ void setTime(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMetho
     free(return_msg);
 }
 
-void setAlarmTime(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation, int hour, int min)
+void set_alarm_time(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation, int hour, int min)
 {
     char *return_msg = (char *) malloc(100);
     if ((hour >= 0) && (hour < 24))
@@ -67,7 +64,7 @@ void setAlarmTime(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBus
     free(return_msg);
 }
 
-void setAlarmStatus(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation, gint status)
+void set_alarm_status(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation, gint status)
 {
     char *return_msg = (char *) malloc(100);
     if (status == 1)
@@ -87,7 +84,7 @@ void setAlarmStatus(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDB
     free(return_msg);
 }
 
-void getAlarmStatus(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation)
+void get_alarm_status(MyExampleComAppTrainningAlarmClock *alarmClockInterface, GDBusMethodInvocation *invocation)
 {
     char *return_msg = (char *) malloc(100);
     if (alarm_status == 1)
@@ -111,6 +108,7 @@ static void name_acquired (GDBusConnection *connection, const gchar *name, gpoin
 {
     g_print("Acquired the name %s on the session \n", name);
 }
+
 static void bus_acquired(GDBusConnection *connection, const gchar *name, gpointer user_data)
 {
     MyExampleObjectSkeleton *skeletonObject;
@@ -123,13 +121,13 @@ static void bus_acquired(GDBusConnection *connection, const gchar *name, gpointe
 
     my_example_object_skeleton_set_com_app_trainning_alarm_clock(skeletonObject, alarmClockInterface);
 
-    g_signal_connect (alarmClockInterface, "handle_set_alarm_status", G_CALLBACK (setAlarmStatus), NULL);
+    g_signal_connect (alarmClockInterface, "handle_set_alarm_status", G_CALLBACK (set_alarm_status), NULL);
 
-    g_signal_connect (alarmClockInterface, "handle_get_alarm_status", G_CALLBACK (getAlarmStatus), NULL);
+    g_signal_connect (alarmClockInterface, "handle_get_alarm_status", G_CALLBACK (get_alarm_status), NULL);
 
-    g_signal_connect (alarmClockInterface, "handle_set_time", G_CALLBACK (setTime), NULL);
+    g_signal_connect (alarmClockInterface, "handle_set_time", G_CALLBACK (set_time), NULL);
 
-    g_signal_connect (alarmClockInterface, "handle-set-alarm-time", G_CALLBACK (setAlarmTime), NULL);
+    g_signal_connect (alarmClockInterface, "handle-set-alarm-time", G_CALLBACK (set_alarm_time), NULL);
 
     g_dbus_object_manager_server_export(serviceManager, G_DBUS_OBJECT_SKELETON(skeletonObject));
     g_dbus_object_manager_server_set_connection(serviceManager, connection);
@@ -141,7 +139,6 @@ static void bus_acquired(GDBusConnection *connection, const gchar *name, gpointe
 
 void *signal_function()
 {
-
     if (alarm_status == 1 )    //alarm is set
     {
         my_example_com_app_trainning_alarm_clock_emit_ring_alarm(proxy);

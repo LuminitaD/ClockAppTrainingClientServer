@@ -9,5 +9,4 @@ void set_time(gint hour, gint min);
 void init();
 void deinit();
 gboolean signal_function(void (*Callback)(void));
-
-#endif /*__CLIENTPROXYLIBRARY_H__*/
+#endif
