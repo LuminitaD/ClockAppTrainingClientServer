@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be9b8cf0_6740034c",
+        "filename": "include/clientProxyLibrary.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "1. remove unnecessary includes\n\n2. use include guard in order to avoid double inclusion:\n\n#ifndef\n#define\n.....\n#endif",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 45
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b6da833_e600c24c",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "please remove",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 32
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc9d8ef4_d82614f5",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "Check *addr for NULL",
+      "range": {
+        "startLine": 29,
+        "startChar": 1,
+        "endLine": 29,
+        "endChar": 81
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87bf222c_89f52434",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "use spaces instead of tabs",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 3
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "acfd88b5_ff56a3bf",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "use macros instead of \"magic values\"",
+      "range": {
+        "startLine": 42,
+        "startChar": 4,
+        "endLine": 42,
+        "endChar": 33
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "26b8e20d_0be4ebae",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "Check the returned value of g_signal_connect",
+      "range": {
+        "startLine": 58,
+        "startChar": 4,
+        "endLine": 58,
+        "endChar": 20
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b1f0b2b_35352f05",
+        "filename": "src/myAppClient.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1014897
+      },
+      "writtenOn": "2019-07-31T08:41:46Z",
+      "side": 1,
+      "message": "g_main_loop_unref",
+      "range": {
+        "startLine": 113,
+        "startChar": 17,
+        "endLine": 113,
+        "endChar": 25
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
