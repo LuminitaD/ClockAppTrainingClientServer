@@ -1,4 +1,3 @@
-//#include "myApp.h"
 #include "myApp_generated.h"
 #include <stdbool.h>
 #include <stdio.h>
