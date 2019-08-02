@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "879fe327_98e4eeab",
+        "filename": "include/clientProxyLibrary.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1016764
+      },
+      "writtenOn": "2019-08-02T11:02:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be9b8cf0_6740034c",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 45
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5b6da833_e600c24c",
         "filename": "src/clientProxyLibrary.c",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f290936_ab1d799c",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1016764
+      },
+      "writtenOn": "2019-08-02T11:02:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b6da833_e600c24c",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 32
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "203bf353_e6c044f9",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1016764
+      },
+      "writtenOn": "2019-08-02T11:02:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc9d8ef4_d82614f5",
+      "range": {
+        "startLine": 29,
+        "startChar": 1,
+        "endLine": 29,
+        "endChar": 81
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "87bf222c_89f52434",
         "filename": "src/clientProxyLibrary.c",
         "patchSetId": 1
@@ -91,6 +163,30 @@
       "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3e28b2b3_69ad24a0",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1016764
+      },
+      "writtenOn": "2019-08-02T11:02:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "87bf222c_89f52434",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 3
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "6c0b70b1_76cc5f75",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1016764
+      },
+      "writtenOn": "2019-08-02T11:02:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "acfd88b5_ff56a3bf",
+      "range": {
+        "startLine": 42,
+        "startChar": 4,
+        "endLine": 42,
+        "endChar": 33
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26b8e20d_0be4ebae",
         "filename": "src/clientProxyLibrary.c",
         "patchSetId": 1
@@ -137,6 +257,30 @@
       "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57fead6d_10d9f2e1",
+        "filename": "src/clientProxyLibrary.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1016764
+      },
+      "writtenOn": "2019-08-02T11:02:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "26b8e20d_0be4ebae",
+      "range": {
+        "startLine": 58,
+        "startChar": 4,
+        "endLine": 58,
+        "endChar": 20
+      },
+      "revId": "b4ac098a45161b18275b54e8533a6d439ba0630f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
